@@ -1,7 +1,7 @@
 # roman-nameral
 App for children showing how much a Name weighs. 
 
-This is a code solution for the following: 
+This is a code/software solution to the following: 
 [How Much Does Your Name Weigh?](https://innovativeclassroom.com/Teaching-Idea/Center+Focus/How+Much+Does+Your+Name+Weigh%3F?fbclid=IwAR0nCxYvarjihFCGStIOWt7lONPrADyW5jDzCYjuyTFDC-uAjA9Xt0nCcRk)
 
 # How Much Does Your Name Weigh?
