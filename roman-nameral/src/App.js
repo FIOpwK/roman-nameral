@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Modal } from 'semantic-ui-react';
+import { Button, Reveal } from 'semantic-ui-react';
 
 
 import './App.css';
+
+
 
 const obj = {
   X: 10,
@@ -43,14 +45,20 @@ const App = () => {
         <h2>Roman Nameral II</h2>
       </header>
       <div className="text-content">
-        <h2>How much does a Name weigh?</h2>
+        {/* <Image src='../images/iam_os-veHGlVkU4qQ-unsplash.jpg' size='small' /> */}
+        <h2>How much does a Name weigh ?</h2>
+        {/* <Reveal animated='small fade'> */}
+        {/* <Reveal.Content visible> */}
         <h2>Play to See</h2>
+        {/* </Reveal.Content> */}
+        {/* </Reveal> */}
       </div>
-      <Button size= "massive" color="violet" onClick={subScore}>Click to Play</Button>
+      <Button size="massive" color="violet" onClick={subScore}>Click to Play</Button>
       <div className="weight-container">
         <div className="weight">{total}</div>
       </div>
       <Button size="massive" color="black" onClick={() => setTotal(0)}>Clear</Button>
+
 
     </div>
   );

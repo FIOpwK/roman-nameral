@@ -1,29 +1,28 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: black; 
   padding-bottom: 2%;
+  background-image:
+  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+   url('./images/iam_os-veHGlVkU4qQ-unsplash.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-Logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #511;
 }
 
 .App-link {
@@ -58,9 +57,11 @@
 
 
 .text-content {
-  background-color: crimson;
+  /* background-color: crimson; */
+  border-bottom: 2px dashed #282c34;
   padding: 2%;
   margin-bottom: 2%;
+  color: #122283;
 }
 
 @keyframes App-logo-spin {
