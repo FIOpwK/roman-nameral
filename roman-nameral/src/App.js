@@ -40,17 +40,17 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Roman Nameral II</p>
+        <h2>Roman Nameral II</h2>
       </header>
-      <div>
+      <div className="text-content">
         <h2>How much does a Name weigh?</h2>
-        <p>Play to See</p>
+        <h2>Play to See</h2>
       </div>
-      <Button color="purple" onClick={subScore}>Click to Play</Button>
+      <Button size= "massive" color="violet" onClick={subScore}>Click to Play</Button>
       <div className="weight-container">
         <div className="weight">{total}</div>
       </div>
-      <Button onClick={() => setTotal(0)}>Clear</Button>
+      <Button size="massive" color="black" onClick={() => setTotal(0)}>Clear</Button>
 
     </div>
   );
