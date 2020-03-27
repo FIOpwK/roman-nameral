@@ -11,7 +11,8 @@ export default function Buttons(props) {
     const subScore = () => {
 
         const name = prompt("Enter a name to see its weight: ") || "";
-        if (name) {
+        name.length > 36 ? prompt("Please enter a shorter name...") :
+
             setTotal(
                 name.split('').reduce((score, letter) => {
                     const currentWeight = obj[letter.toUpperCase()];
@@ -19,7 +20,7 @@ export default function Buttons(props) {
                     return score;
                 }, 0)
             )
-        }
+         
 
         console.log(total)
 
@@ -36,7 +37,7 @@ export default function Buttons(props) {
                     matches => (
                         <React.Fragment>
                             {matches.small && <Button size="massive" color="violet" onClick={subScore}>Play to See</Button>}
-                            {matches.medium && <Button size="large" color="blue" onClick={subScore}>Click to Play</Button>}
+                            {matches.medium && <Button size="massive" color="blue" onClick={subScore}>Click to Play</Button>}
                             {matches.large && <Button size="massive" color="yellow" onClick={subScore}>Click to Play</Button>}
                         </React.Fragment>
                     )
