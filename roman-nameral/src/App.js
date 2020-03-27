@@ -46,8 +46,8 @@ const App = () => {
         <p>Play to See</p>
       </div>
       <Button color="purple" onClick={subScore}>Click to Play</Button>
-      <div>
-        <span className="weight">{total}</span>
+      <div className="weight-container">
+        <div className="weight">{total}</div>
       </div>
 
     </div>
