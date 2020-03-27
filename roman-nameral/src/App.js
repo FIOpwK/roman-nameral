@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 import './App.css';
 
@@ -16,7 +16,7 @@ const obj = {
   R: 1,
   S: 5
 }
-const  App = () => {
+const App = () => {
   const [total, setTotal] = React.useState(0);
 
   const subScore = () => {
@@ -31,7 +31,7 @@ const  App = () => {
         }, 0)
       )
     }
-    
+
     console.log(total)
 
   }
@@ -47,9 +47,9 @@ const  App = () => {
       </div>
       <Button color="purple" onClick={subScore}>Click to Play</Button>
       <div>
-        <span>{total}</span>
+        <span className="weight">{total}</span>
       </div>
-      
+
     </div>
   );
 }
