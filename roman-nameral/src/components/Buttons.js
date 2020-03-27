@@ -2,9 +2,10 @@ import React from 'react'
 import { Button } from 'semantic-ui-react';
 import Media from 'react-media';
 import obj from '../obj';
+import Display from './Display';
 
 
-export default function Buttons() {
+export default function Buttons(props) {
     const [total, setTotal] = React.useState(0);
 
     const subScore = () => {
@@ -42,9 +43,7 @@ export default function Buttons() {
                 }
 
             </Media>
-            <div className="weight-container">
-                <div className="weight">{total}</div>
-            </div>
+            <Display total={total}/>
             <Button size="massive" color="black" onClick={() => setTotal(0)}>Clear</Button>
         </div>
     )
