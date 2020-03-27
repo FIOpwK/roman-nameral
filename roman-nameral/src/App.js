@@ -21,13 +21,13 @@ const App = () => {
 
   const subScore = () => {
 
-    let name = window.prompt("Enter a name to see its weight: ") || "";
+    const name = prompt("Enter a name to see its weight: ") || "";
     if (name) {
       setTotal(
-        name.split('').reduce((next, letter) => {
+        name.split('').reduce((score, letter) => {
           const currentWeight = obj[letter.toUpperCase()];
-          next += currentWeight ? currentWeight : 0;
-          return next;
+          score += currentWeight ? currentWeight : 0;
+          return score;
         }, 0)
       )
     }
@@ -49,6 +49,7 @@ const App = () => {
       <div className="weight-container">
         <div className="weight">{total}</div>
       </div>
+      <Button>Clear</Button>
 
     </div>
   );
