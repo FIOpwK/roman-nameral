@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Reveal } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
+import  Media  from 'react-media';
 
 
 import './App.css';
@@ -41,19 +42,36 @@ const App = () => {
 
   return (
     <div className="App">
+
       <header className="App-header">
         <h2>Roman Nameral II</h2>
       </header>
       <div className="text-content">
-        {/* <Image src='../images/iam_os-veHGlVkU4qQ-unsplash.jpg' size='small' /> */}
+
         <h2>How much does a Name weigh ?</h2>
-        {/* <Reveal animated='small fade'> */}
-        {/* <Reveal.Content visible> */}
+
+
         <h2>Play to See</h2>
-        {/* </Reveal.Content> */}
-        {/* </Reveal> */}
+
+
       </div>
-      <Button size="massive" color="violet" onClick={subScore}>Click to Play</Button>
+      <Media queries={{
+        small: "(max-width: 599px)",
+        medium: "(min-width: 600px) and (max-width: 1199px)",
+        large: "(min-width: 1200px)"
+      }}>
+        {
+          matches => (
+            <React.Fragment>
+              {matches.small && <Button size="massive" color="violet" onClick={subScore}>Click to Play</Button>}
+              {matches.medium && <Button size="large" color="blue" onClick={subScore}>Click to Play</Button>}
+              {matches.large && <Button size="massive" color="yellow" onClick={subScore}>Click to Play</Button>}
+            </React.Fragment>
+          )
+        }
+
+      </Media>
+      
       <div className="weight-container">
         <div className="weight">{total}</div>
       </div>
