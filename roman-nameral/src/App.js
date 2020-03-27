@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import { Button, Modal } from 'semantic-ui-react';
+
 
 import './App.css';
 
@@ -49,7 +50,7 @@ const App = () => {
       <div className="weight-container">
         <div className="weight">{total}</div>
       </div>
-      <Button>Clear</Button>
+      <Button onClick={() => setTotal(0)}>Clear</Button>
 
     </div>
   );
