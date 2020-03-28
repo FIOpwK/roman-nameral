@@ -4,7 +4,7 @@ import {Segment} from 'semantic-ui-react';
 
 export default function Display(props) {
     return (
-        <div className="weight-container">
+        <div className="display-container">
             
             <Segment circular inverted color="black" raised>
                 <div className="weight">{props.total}</div>
