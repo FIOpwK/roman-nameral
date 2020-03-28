@@ -36,9 +36,9 @@ export default function Buttons(props) {
                 {
                     matches => (
                         <React.Fragment>
-                            {matches.small && <Button size="massive" color="violet" onClick={subScore}>Play to See</Button>}
-                            {matches.medium && <Button size="massive" color="blue" onClick={subScore}>Click to Play</Button>}
-                            {matches.large && <Button size="massive" color="yellow" onClick={subScore}>Click to Play</Button>}
+                            {matches.small && <Button size="massive" color="violet" onClick={subScore}>See</Button>}
+                            {matches.medium && <Button size="massive" color="blue" onClick={subScore}>Play to See</Button>}
+                            {matches.large && <Button size="massive" color="yellow" onClick={subScore}>See your weight</Button>}
                         </React.Fragment>
                     )
                 }

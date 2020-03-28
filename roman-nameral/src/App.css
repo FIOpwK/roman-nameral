@@ -8,11 +8,11 @@
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-Logo {
+/* @media (prefers-reduced-motion: no-preference) {
+  .weight-container div {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   /* background-color: #282c34; */
@@ -46,11 +46,12 @@
 
 .weight-container {
   margin: 2%;
-  border: 1px solid;
+  border-radius: 4rem;
+  /* border: 5px solid #61dafb; */
   background-color: #282c34;
   display: flex;
   justify-content: center;
-  /* width: 50%; */
+  /* width: 100vw; */
   align-items: center;
   align-self: center;
 }
