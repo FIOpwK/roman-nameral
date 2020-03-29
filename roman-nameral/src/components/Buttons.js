@@ -15,7 +15,7 @@ export default function Buttons(props) {
     const handleChange = e => {
         e.preventDefault();
         setName(e.target.value);
-        console.log(e.target.value, name)
+        
 
     }
 
@@ -71,6 +71,7 @@ export default function Buttons(props) {
                     size="large"
                     color="secondary"
                     variant="outlined"
+                    onMouseUp={() => setName('')}
                     onMouseDown={() => setCount(Math.max(count - 1, 0))}
                     onClick={() => setTotal('')}>Doceo</Button>
             </div>
