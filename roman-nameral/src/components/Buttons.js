@@ -23,7 +23,7 @@ export default function Buttons(props) {
 
 
         // const name = window.prompt("Enter a name to see its weight") || "";
-        name.length > 36 ? prompt("Please enter a shorter name...") :
+        name.length > 36 ? alert("Please enter a shorter name...") :
 
             setTotal(
                 name.split('').reduce((score, letter) => {
