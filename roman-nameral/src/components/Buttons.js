@@ -49,7 +49,7 @@ export default function Buttons(props) {
                     size="large"
                     color="secondary"
                     variant="outlined"
-                    onClick={() => setTotal(0)}>Clear</Button>
+                    onClick={() => setTotal('')}>Clear</Button>
             </div>
 
 
