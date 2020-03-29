@@ -1,10 +1,17 @@
+.light-mode {
+  background-color: #eceff1;
+}
+
+.dark-mode {
+  background-color: #282c34;
+}
+
+
 .App {
   text-align: center;
   /* background-color: black;  */
   padding-bottom: 2%;
-  background-image:
-  linear-gradient(to bottom, rgba(219, 184, 179, 0.5), rgba(0,0,255,0.5)),
-   url('./images/iam_os-veHGlVkU4qQ-unsplash.jpg');
+ 
 }
 
 
@@ -14,15 +21,24 @@
   }
 } */
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  
+}
+
 .App-header {
   /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
+  align-content: center;
   justify-content: center;
   font-size: calc(10em + 2vmin);
   color: #511;
+  background-color: #455a64;
 }
 
 /* .App-link {
@@ -47,11 +63,11 @@
 .weight-container {
   margin: 2%;
   border-radius: 4rem;
-  /* border: 5px solid #61dafb; */
+  
   background-color: #282c34;
   display: flex;
   justify-content: center;
-  /* width: 100vw; */
+  
   align-items: center;
   align-self: center;
 }
@@ -59,9 +75,7 @@
 .display-container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* border: 1px solid red; */
+  
   padding: 2%;
 }
 
@@ -71,7 +85,7 @@
   border-bottom: 2px dashed #282c34;
   padding: 2%;
   margin-bottom: 2%;
-  color: #122283;
+  /* color: #122283; */
 }
 
 @keyframes App-logo-spin {

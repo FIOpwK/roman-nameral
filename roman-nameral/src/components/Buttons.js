@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button, Icon } from 'semantic-ui-react';
+import Button from '@material-ui/core/Button';
 
-import Media from 'react-media';
 import obj from '../obj';
 import Display from './Display';
 
@@ -30,41 +29,29 @@ export default function Buttons(props) {
 
     return (
         <div>
-            <Display total={total} />
-            <Media queries={{
-                small: "(max-width: 599px)",
-                medium: "(min-width: 600px) and (max-width: 1199px)",
-                large: "(min-width: 1200px)"
-            }}>
-                {
-                    matches => (
-                        <React.Fragment>
-                            {matches.small &&
-                                <Button
-                                    size="massive"
-                                    color="violet"
-                                    onClick={subScore}>See</Button>
-                            }
+            <div>
+                <Display total={total} />
 
-                            {matches.medium &&
-                                <Button
-                                    size="massive"
-                                    color="blue"
-                                    onClick={subScore}>Play</Button>
-                            }
+            </div>
 
-                            {matches.large &&
-                                <Button
-                                    size="massive"
-                                    color="yellow"
-                                    onClick={subScore}>Go</Button>
-                            }
-                        </React.Fragment>
-                    )
-                }
+            <div className="button-container">
 
-            </Media>
-            <Button size="massive" color="black" onClick={() => setTotal(0)}>Clear</Button>
+                <Button
+                    style={{margin: '2%'}}
+                    size="large"
+                    color="primary"
+                    variant="outlined"
+                    onClick={subScore}>Weigh</Button>
+
+
+                <Button
+                    style={{margin: '2%'}}
+                    size="large"
+                    color="secondary"
+                    variant="outlined"
+                    onClick={() => setTotal(0)}>Clear</Button>
+            </div>
+
 
 
         </div>
