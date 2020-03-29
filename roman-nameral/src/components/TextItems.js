@@ -1,22 +1,8 @@
 import React from 'react'
-
 import Navigation from './Navigation';
-import TextField from '@material-ui/core/TextField';
+
 
 const TextItems = (props) => {
-    const [name, setName] = React.useState('')
-
-    const handleChange = e => {
-        e.preventDefault();
-        setName(e.target.value);
-        console.log(e.target.value, name)
-        
-    }
-    
-
-    // const handleSubmit = e => {
-    //     console.log('clicked', name)
-    // }
 
     return (
         <>
@@ -29,18 +15,9 @@ const TextItems = (props) => {
                 </header>
                 <div className="text-content">
                 </div>
-                <h1 className={'dark-mode light-mode'}>Does your Name have weight?</h1>
+                <h1 className={'dark-mode'}>Does your Name have weight?</h1>
             </div>
 
-            <TextField
-                label="Nameral"
-                value={name}
-                onChange={handleChange}
-                variant="filled"
-                
-                // onSubmit={handleSubmit}
-                
-            />
         </>
     )
 

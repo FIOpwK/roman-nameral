@@ -3,6 +3,7 @@ import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 // import useLocalStorage from '../hooks/useLocalStorage';
+// import Badge from '@material-ui/core/Badge';
 
 
 
@@ -17,6 +18,9 @@ const Navigation = (e) => {
     
     return (
         <div>
+            <div>
+                
+            </div>
             <FormGroup>
                 <FormControlLabel
                     control={<Switch checked={darkMode} onChange={handleChange} />}

@@ -81,8 +81,8 @@
 
 
 .text-content {
-  /* background-color: crimson; */
-  border-bottom: 2px dashed #282c34;
+  background-color: crimson;
+  border-top: 5px solid #282c34;
   padding: 2%;
   margin-bottom: 2%;
   /* color: #122283; */
