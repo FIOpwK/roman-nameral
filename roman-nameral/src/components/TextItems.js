@@ -8,9 +8,15 @@ const TextItems = (props) => {
 
     const handleChange = e => {
         e.preventDefault();
-        setName(e.target.value)
+        setName(e.target.value);
+        console.log(e.target.value, name)
         
     }
+    
+
+    // const handleSubmit = e => {
+    //     console.log('clicked', name)
+    // }
 
     return (
         <>
@@ -31,6 +37,8 @@ const TextItems = (props) => {
                 value={name}
                 onChange={handleChange}
                 variant="filled"
+                
+                // onSubmit={handleSubmit}
                 
             />
         </>
