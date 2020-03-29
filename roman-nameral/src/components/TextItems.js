@@ -23,11 +23,11 @@ const TextItems = (props) => {
                 </header>
                 <div className="text-content">
                 </div>
-                <h1 className={'dark-mode light-mode'}>Enter a Name to see its weight </h1>
+                <h1 className={'dark-mode light-mode'}>Does your Name have weight?</h1>
             </div>
 
             <TextField
-                label="Name"
+                label="Nameral"
                 value={name}
                 onChange={handleChange}
                 variant="filled"

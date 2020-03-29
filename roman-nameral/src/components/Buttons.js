@@ -42,7 +42,7 @@ export default function Buttons(props) {
                     size="large"
                     color="primary"
                     variant="outlined"
-                    onClick={subScore}>Weigh</Button>
+                    onClick={subScore}>Expendo</Button>
 
 
                 <Button
@@ -50,7 +50,7 @@ export default function Buttons(props) {
                     size="large"
                     color="secondary"
                     variant="outlined"
-                    onClick={() => setTotal('')}>Clear</Button>
+                    onClick={() => setTotal('')}>Doceo</Button>
             </div>
 
 
