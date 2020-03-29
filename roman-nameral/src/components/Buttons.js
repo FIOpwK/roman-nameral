@@ -1,17 +1,17 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
-
 import obj from '../obj';
 import Display from './Display';
 
 
 
 export default function Buttons(props) {
-    const [total, setTotal] = React.useState(0);
+    const [total, setTotal] = React.useState('');
 
     const subScore = () => {
 
-        const name = prompt("Enter a name to see its weight: ") || "";
+        
+        const name = window.prompt("Enter a name to see its weight") || "";
         name.length > 36 ? prompt("Please enter a shorter name...") :
 
             setTotal(
@@ -29,6 +29,7 @@ export default function Buttons(props) {
 
     return (
         <div>
+
             <div>
                 <Display total={total} />
 
