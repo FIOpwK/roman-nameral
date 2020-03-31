@@ -32,11 +32,11 @@
   /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
-  /* flex-direction: row-reverse; */
+  flex-direction: row-reverse;
   align-items: center;
   align-content: center;
   justify-content: center;
-  font-size: calc(10em + 2vmin);
+  /* font-size: calc(2em + 4vmin); */
   color: #511;
   background-color: #455a64;
 }
