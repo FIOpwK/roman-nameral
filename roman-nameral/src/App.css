@@ -9,8 +9,8 @@
 
 .App {
   text-align: center;
-  /* background-color: black;  */
-  padding-bottom: 2%;
+ 
+  width: 100vw;
  
 }
 
@@ -24,7 +24,7 @@
 .button-container {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  /* padding: 2%; */
   
 }
 
@@ -32,7 +32,7 @@
   /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
   align-content: center;
   justify-content: center;

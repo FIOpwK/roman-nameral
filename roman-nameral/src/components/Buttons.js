@@ -55,8 +55,6 @@ export default function Buttons(props) {
                 </Badge>
                 <Display total={total} />
 
-            </div>
-
             <div className="button-container">
 
                 <Button
@@ -75,8 +73,7 @@ export default function Buttons(props) {
                     onMouseDown={() => setCount(Math.max(count - 1, 0))}
                     onClick={() => setTotal('')}>Doceo</Button>
             </div>
-
-
+            </div>
 
         </div>
     )
