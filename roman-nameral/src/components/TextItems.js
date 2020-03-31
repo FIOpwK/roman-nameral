@@ -15,7 +15,7 @@ const TextItems = (props) => {
                 </header>
                 <div className="text-content">
                 </div>
-                <h1 className={'dark-mode'}>Names have weight?</h1>
+                <h1 className={'dark-mode'}>Do Names have weight?</h1>
             </div>
 
         </>
