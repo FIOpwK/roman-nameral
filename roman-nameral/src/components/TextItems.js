@@ -15,6 +15,7 @@ const TextItems = (props) => {
                 </header>
                 <div className="text-content">
                 </div>
+                {/* entry point for phrase api:  */}
                 <h1 className={'dark-mode'}>Do Names have weight?</h1>
             </div>
 
