@@ -19,13 +19,20 @@ export default function Buttons(props) {
 
     }
 
+    const handleQuote = e => {
+        console.log(`${name}`)
+    }
+
     const subScore = () => {
 
 
         // const name = window.prompt("Enter a name to see its weight") || "";
-        name.length > 36 ? alert("Please enter a shorter name...") :
+        name.length > 36 ? alert("Please enter a shorter name...", handleQuote) :
 
             setTotal(
+                //  math games switch on the number side of your brain so your mental math skills are raring to go
+                // An average is the sum of all the numbers in a set, divided by the number of numbers in that set.
+                // Event ID: CRO-9498-BIAC
                 name.split('').reduce((score, letter) => {
                     const currentWeight = obj[letter.toUpperCase()];
                     score += currentWeight ? currentWeight : 0;

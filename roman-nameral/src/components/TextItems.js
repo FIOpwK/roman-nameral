@@ -16,7 +16,7 @@ const TextItems = (props) => {
                 <div className="text-content">
                 </div>
                 {/* entry point for phrase api:  */}
-                <h1 className={'dark-mode'}>Enter name, word or phrase to see how much it weighs!</h1>
+                <h1 className={'dark-mode'}>What's your Nameral?</h1>
             </div>
 
         </>
