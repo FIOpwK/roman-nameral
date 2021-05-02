@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
-import obj from '../obj';
+import obj from './obj';
 import Display from './Display';
 import Badge from '@material-ui/core/Badge';
 import TextField from '@material-ui/core/TextField';
@@ -55,7 +55,7 @@ export default function Buttons(props) {
                         value={name}
                         onChange={handleChange}
                         variant="filled"
-                    // onSubmit={handleSubmit}
+
 
                     />
 
